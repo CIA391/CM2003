@@ -22,9 +22,15 @@ You should see that this uses a subtable called "messages" in your firebase proj
     <input type='text' id='messageInput' placeholder='Message'>
     <script>
     var config = {
-      databaseURL: "https://rgu-student-planner.firebaseio.com/"
-    };
-    firebase.initializeApp(config);
+  var config = {
+    apiKey: "AIzaSyBloZrH8-nq3wgMVGyR8YIHobeiyhVYSj0",
+    authDomain: "rgu-student-planner.firebaseapp.com",
+    databaseURL: "https://rgu-student-planner.firebaseio.com",
+    projectId: "rgu-student-planner",
+    storageBucket: "rgu-student-planner.appspot.com",
+    messagingSenderId: "638619875970"
+  };
+  firebase.initializeApp(config);
     //initilize app to use the users sub table
     var myDataRef = firebase.database().ref('messages');
 
